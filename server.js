@@ -27,7 +27,12 @@ app.post('/ask', async (req, res) => {
       })
     });
     const data = await response.json();
-    if (data.error) return res.status(400).json({ error: data.error.message });
+    if (data.error) {
+  console.log(data);
+  return res.status(400).json({
+    error: JSON.stringify(data)
+  });
+}
     res.json({ answer: data.content[0].text });
   } catch (e) {
     res.status(500).json({ error: e.message });
