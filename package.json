@@ -1,0 +1,13 @@
+{
+  "name": "cyprus-health-law-assistant",
+  "version": "2.1.0",
+  "description": "Cyprus Health Law Assistant — Ν.45(Ι)/2026 | Ν.90(Ι)/2001 | Ν.198(Ι)/2025 | Ν.222/1991",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
